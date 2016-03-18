@@ -1,0 +1,43 @@
+body
+{
+	background-color: rgb(0, 0, 0);
+}
+
+div
+{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#first
+{
+	height: 300px;
+	width: 0px;
+	border-left: 150px solid rgb(255, 255, 0);
+	border-right: 150px solid rgb(255, 0, 0); 
+}
+
+#second
+{
+	height: 0px;
+	width: 300px;
+	border-top: 150px solid rgb(0, 255, 0);
+	border-bottom: 150px solid rgb(0, 255, 255);
+}
+
+#third
+{
+	width: 100px;
+	height: 100px;
+	border: 100px solid rgb(150, 0, 150);
+	background-color: rgb(255, 0, 255);
+}
+
+#fourth
+{
+	width: 100px;
+	height: 300px;
+	border-left: 100px solid rgb(200, 200, 200);
+	border-right: 100px solid rgb(100, 100, 100);
+	background-color: rgb(255, 255, 255);
+}

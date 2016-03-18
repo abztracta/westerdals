@@ -1,0 +1,81 @@
+#wrapper
+{
+	width: 960px;
+	height: 600px;
+	background-color: rgb(0, 0, 0);
+	position: relative;
+}
+
+#wrapper *
+{
+	position: absolute;
+}
+
+div a
+{
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	top: 20px;
+	width: 150px;
+	height: 25px;
+}
+
+div a:hover
+{
+	color: rgb(127, 127, 127);
+}
+
+#yellow a
+{
+	left: 20px;
+	border: 3px solid rgb(229, 229, 0);
+	background-color: rgb(255, 255, 0);
+}
+
+#blue a
+{
+	left: 196px;
+	border: 3px solid rgb(0, 0, 200);
+	background-color: rgb(40, 40, 255);
+}
+
+#red a
+{
+	left: 372px;
+	border: 3px solid rgb(200, 0, 0);
+	background-color: rgb(255, 0, 0);
+}
+
+#shape
+{
+	left: 200px;
+	bottom: 200px;
+	width: 5px;
+	height: 5px;
+	background-color: rgb(255, 0, 0);
+
+	transition-property: border-radius, left, height, width, bottom, background-color;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+
+	-webkit-transition-property: border-radius, height, width, background-color;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: linear;
+}
+
+#yellow:target~#shape
+{
+	background-color: rgb(255, 255, 0);
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}
+
+#blue:target~#shape
+{
+	background-color: rgb(0, 0, 255);
+	height: 150px;
+	width: 300px;
+}

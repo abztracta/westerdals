@@ -1,0 +1,34 @@
+#wrapper
+{
+	width: 960px;
+	height: 600px;
+	position: relative;
+}
+
+#wrapper *
+{
+	position: absolute;
+}
+
+#roller
+{
+	width: 50px;
+	height: 50px;
+	background-color: rgb(50, 50, 100);
+	left: 20px;
+	bottom: 200px;
+
+	transition-property: left, -webkit-transform;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+
+	-webkit-transition-property: left, -webkit-transform;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: linear;
+}
+
+#roller:hover
+{
+	left: 910px;
+	-webkit-transform: rotate(1080deg);
+}

@@ -1,0 +1,437 @@
+@font-face {
+font-family: Signoria;
+src: url(Signoria.ttf);
+}
+
+body {
+	font-family: arial;
+	color: black;
+	font-size: 10pt;
+	margin: 0px;
+	padding: 0px;
+	background-color: #f1f1f1;
+}
+
+a, a:active, a:visited {
+	color: black;
+}
+
+a:hover {
+	color: white;
+}
+
+/* Layout */
+#wrapper {
+	overflow: visible;
+	height: 100%;
+	width: 100%;
+	margin: 0px auto;
+	background-color: none;
+	position: relative;
+}
+
+/* Header */
+header {
+	width: 99%;
+	height: 18px;
+	position: relative;
+	border-bottom: 2px solid black;
+	padding: 0.5%;	
+}
+
+#header_left {
+	position: absolute;
+	left: 5px;
+}
+
+#header_right {
+	position: absolute;
+	right: 5px;
+}
+
+/* Nav */
+nav {
+	text-align: center;
+	margin-top: -2px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+nav li a, nav li a:active, nav li a:visited {
+	display: block;
+	width: 150px;
+	height: 30px;
+	background-color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	font-family: Signoria, Arial, sans-serif;
+	font-size: 12pt;
+	color: white;
+	line-height: 23pt;
+	text-decoration: none;
+	-webkit-transition: 1s;
+}
+
+nav li a:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: black;
+}
+
+nav ul:last-child {
+	margin-right: 0px;
+}
+/* Nav slutt */
+
+/* Header slutt */
+
+/* Content */
+#content {
+	clear: both;
+	width: 1050px;
+	height: auto;
+	margin: 0px auto;
+}
+/* Content slutt */
+
+/* Logo */
+#logo {
+	background-image: url('../images/header.png');
+	background-repeat: no-repeat;
+	background-size: none;
+	background-position: center;
+	padding-top: 3%;
+	margin: 0px auto;
+	height: 200px;
+	width: 100%;
+	padding-left: 30px;
+}
+/* Logo slutt */
+
+#footer {
+	padding-top: 1%;
+	margin: 0px auto;
+	width: 20%;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 200px;
+}
+/* Layout slutt */
+
+/* Login */
+#login {
+	text-align: center;
+	width: 50%;
+	margin: 0px auto;
+}
+
+#login_error {
+	color: red;
+}
+/* Login slutt */
+
+/* Register */
+#register {
+	margin: 0px auto;
+	width: 50%;
+}
+
+#register table {
+	margin: 0px auto;
+}
+/* Register slutt */
+
+/* Utvalg */
+#utvalg_wrapper {
+	width: 80%;
+	margin: 0px auto;
+}
+
+#utvalg_wrapper img {
+	max-width: 100%;
+}
+
+#utvalg_wrapper a {
+	opacity: 0.6;
+	-webkit-transition: 1s;
+	-webkit-backface-visibility: hidden;
+}
+
+#utvalg_wrapper a:hover	{
+	opacity: 1.0;
+}
+
+.large_links, .small_links {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin-right: 8px;
+}
+
+.large_links {
+	height: 328px;
+	width: 98%;
+}
+
+.small_links {
+	float: left;
+	height: 160px;
+	width: 202px;
+	margin-bottom: 8px;
+}
+
+.large_links span, .small_links span {
+	font-family: Signoria, Arial;
+	font-size: 20px;
+	text-decoration: none;
+  	text-transform: uppercase;
+  	text-align: center;
+  	color: #ffffff;
+  	display: block;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	-webkit-transition: 1s;
+}
+
+.large_links span:hover, .small_links span:hover {
+	color: gray;
+}
+/* Utvalg slutt */
+
+/* Popup-boks */
+.custombox {
+	display: none;
+	background: white;
+	width: 400px;
+	min-height: 600px;
+	border-radius: 3px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.custombox-img {
+	padding: 0;
+	height: 150px;
+	width: 100%;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.custombox-text {
+	padding: 5%;
+	width: 90%;
+}
+
+.custombox-activity h2 {
+	margin-top: 8px;
+}
+.custombox-activity p.activity-host {
+	margin-bottom: 0;
+	font-family: Signoria, Arial, sans-serif;
+}
+
+.custombox-activity p.activity-place-date {
+	position: absolute;
+	right: 15px;
+	bottom: 0;
+	font-family: Signoria, Arial, sans-serif;
+	color: #333;
+}
+/* Popup-boks slutt */
+
+/* Kalender */
+.calendar-utvalg, .calendar-title, .calendar-place-date, .calendar-small-utvalg, .calendar-small-title, .calendar-small-place-date {
+	font-family: Signoria;
+}
+
+#calendar-wrapper {
+	width: 84%;
+	margin: 0px auto;
+}
+
+.calendar-event {
+	background-color: #f9f9f9;
+	height: 150px;
+	margin-bottom: 8px;
+	position: relative;
+	border-radius: 1px;
+	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-event:hover {
+	background-color: #444444;
+}
+
+.calendar-event:hover .calendar-title, .calendar-event:hover .calendar-place-date {
+	color: #f9f9f9;
+}
+
+.calendar-img {
+	float: left;
+	width: 34%;
+	overflow: hidden;
+	height: 100%;
+	position: relative;
+	background-color: #666666;
+}
+
+.calendar-img img {
+	max-width: 100%;
+}
+
+.calendar-content {
+	float: right;
+	width: 66%;
+	padding: 0px;
+}
+
+.calendar-utvalg, .calendar-title, .calendar-date, .calendar-date span, .calendar-place-date {
+	position: absolute;
+}
+
+.calendar-utvalg {
+	text-transform: uppercase;
+	font-size: 10pt;
+	padding: 15px;
+	margin-top: 5px;
+}
+
+.calendar-title {
+	color: black;
+	font-size: 14pt;
+	padding: 15px;
+	margin-top: 15px;
+}
+
+.calendar-date {
+	width: 80px;
+	height: 72px;
+	line-height: 90px;
+	font-size: 26pt;
+	color: #444444;
+	font-weight: bold;
+	text-align: center;
+	background-color: white;
+	top: 7px;
+	right: 7px;
+	border-radius: 4px;
+	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+}
+
+.calendar-date span {
+	height: 17px;
+	width: 100%;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+	font-family: Arial;
+	font-size: 7.5pt;
+	line-height: 12pt;
+	color: white;
+	left: 0;
+}
+
+.calendar-place-date {
+	font-size: 10pt;
+	color: #444444;
+	text-align: right;
+	right: 0;
+	bottom: 0;
+	padding: 8px;
+}
+
+.calendar-small-wrapper {
+	width: 90%;
+	padding: 5%;
+	margin: 0px auto;
+}
+
+.calendar-small-event {
+	background-color: #f9f9f9;
+	height: 100px;
+	margin-bottom: 8px;
+	position: relative;
+	border-radius: 1px;
+	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-small-event:hover {
+	background-color: #444444;
+}
+
+.calendar-small-event:hover .calendar-small-title, .calendar-small-event:hover .calendar-small-place-date {
+	color: #f9f9f9;
+}
+
+.calendar-small-img {
+	float: left;
+	width: 34%;
+	overflow: hidden;
+	height: 100%;
+	position: relative;
+	background-color: #666666;
+}
+
+.calendar-small-content {
+	float: right;
+	width: 66%;
+	padding: 0px;
+}
+
+.calendar-small-title, .calendar-small-place-date {
+	position: absolute;
+}
+
+
+.calendar-small-title {
+	color: black;
+	font-size: 10pt;
+	padding: 12px;
+	margin-top: 0px;
+}
+
+.calendar-small-place-date {
+	font-size: 8pt;
+	color: #444444;
+	text-align: right;
+	right: 0;
+	bottom: 0;
+	padding: 8px;
+}
+/* Kalender slutt */
+
+/* Overskrifter */
+h1, h2, h3 {
+	font-family: Signoria;
+}
+
+/* Hovedoverskrift */
+h1 {
+	font-size: 20pt;
+ 	color: black;
+ 	text-transform: uppercase;
+ 	margin-top: 0px;
+}
+
+/* Overskrift til custombox */
+h2  {
+	font-size: 12pt;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: black;
+	color: white;
+	width: 355px;
+	margin-top: 5px;
+	padding: 3px;
+}
+/* Overskrifter slutt */

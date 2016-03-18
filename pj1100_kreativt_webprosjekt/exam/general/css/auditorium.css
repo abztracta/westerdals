@@ -1,0 +1,61 @@
+#wrapper
+{
+	background-image: url('../images/empty_auditorium.png');
+}
+
+.exitAuditorium
+{
+	left: 654px;
+	top: 186px;
+	width: 31px;
+	height: 150px;
+	cursor: url('../../general/images/cursor/north.png'), auto;
+}
+
+.exitAuditorium:hover
+{
+	background-image: url('../images/auditorium_door_open.png');
+}
+
+#first_row
+{
+	left: 137px;
+	top: 284px;
+}
+
+#middle_row
+{
+	left: 65px;
+	top: 290px;
+}
+
+#backmost_row
+{
+	left: 15px;
+	top: 263px;
+}
+
+#lecturer:hover ~ #talkbubble p
+{
+	width: 100px;
+	height: 50px;
+	border-radius: 5px; 	
+	left: 350px;
+	top: 180px;
+	width: 280px;
+	display: inline;
+	background-color: #ccc;
+	border: 1px solid #000;
+	text-align: center;
+}
+#lecturer
+{
+	left: 309px;
+	top: 219px;
+	cursor: url('../../general/images/cursor/question.png'), auto;
+}
+
+#talkbubble p
+{
+	display: none;
+}

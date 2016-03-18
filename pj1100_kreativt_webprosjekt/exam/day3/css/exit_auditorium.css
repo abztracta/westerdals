@@ -1,0 +1,133 @@
+#thief
+{
+	top: 170px;
+	width: 233px;
+	height: 261px;
+	left: -233px;
+	background-image: url('../images/thief.png');
+
+	-webkit-animation-name: thiefAnimation, thiefWalking;
+	-webkit-animation-duration: 0.44s, 10s;
+	-webkit-animation-timing-function: linear, linear;
+	-webkit-animation-iteration-count: infinite, 1;
+}
+
+#thief:hover
+{
+	-webkit-animation-play-state: paused;
+	background-image: url('../images/thief.png'); 
+}
+
+#thief a
+{
+	left: 50px;
+	width: 150px;
+	height: 261px;
+}
+
+#lecturer
+{
+	left: 575px;
+	top: 140px;
+	width: 233px;
+	height: 261px;
+	background-image: url('../images/lecturer_hallway.png');
+
+	-webkit-animation-name: lecturer;
+	-webkit-animation-duration: 3.5s;
+	-webkit-animation-timing-function: linear;
+
+}
+
+#cry
+{
+	-webkit-opacity: 0;
+
+	-webkit-animation-name: cryOut;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 3.5s;
+}
+
+@-webkit-keyframes thiefAnimation
+{
+	0%
+	{
+		background-image: url('../images/thief.png');
+	}
+
+	49%
+	{
+		background-image: url('../images/thief.png');
+	}
+
+	50%
+	{
+		background-image: url('../images/thiefWalking.png');
+	}
+
+	100%
+	{
+		background-image: url('../images/thiefWalking.png');
+	}
+}
+
+@-webkit-keyframes thiefWalking
+{
+	0%
+	{
+		left: 960px;
+		top: 170px;
+	}
+
+	50%
+	{
+		left: 300px;
+		top: 200px;
+	}
+
+	100%
+	{
+
+	}
+}
+
+@-webkit-keyframes lecturer
+{
+	0%
+	{
+		left: 960px;
+	}
+
+	100%
+	{
+		left: 575px;
+	}
+}
+
+@-webkit-keyframes cryOut
+{
+	0%
+	{
+		-webkit-opacity: 1;
+		width: 200px;
+		height: 50px;
+		top: 75px;
+		background-color: #ddd;
+		left: 475px;
+		border: 3px solid #000;
+		border-radius: 10px;
+	}
+
+	100%
+	{
+		-webkit-opacity: 1;
+		width: 200px;
+		height: 50px;
+		top: 75px;
+		background-color: #ddd;
+		left: 475px;
+		border: 3px solid #000;
+		border-radius: 10px;
+	}
+}

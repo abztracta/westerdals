@@ -1,0 +1,28 @@
+#wrapper
+{
+	background-image: url('../images/fubar1.png');
+}
+
+.bar
+{
+	width: 200px;
+	height: 200px;
+	left: 650px;
+	cursor: url('../../general/images/cursor/northeast.png'), auto;
+}
+
+.hallway
+{
+	top: 500px;
+	width: 960px;
+	height: 100px;
+	cursor: url('../../general/images/cursor/south.png'), auto;
+}
+#studentFubarH{
+	top: 115px;
+	left:112px;
+}
+#studentFubarV{
+	top: 115px;
+	left: 0px;
+}

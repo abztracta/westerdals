@@ -1,0 +1,19 @@
+.state
+{
+	display: none;
+}
+
+#pre:target
+{
+	display: inline;
+}
+
+#group:target
+{
+	display: inline;
+}
+
+#post:target
+{
+	display: inline;
+}

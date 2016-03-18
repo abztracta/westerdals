@@ -1,0 +1,75 @@
+#wrapper
+{
+	width: 960px;
+	height: 600px;
+	position: relative;
+	background-color: rgb(250, 150, 200);
+}
+
+#wrapper *
+{
+	position: absolute;
+}
+
+.traveller
+{
+	left: 0px;
+	width: 100px;
+	height: 100px;
+	top: 0px;
+	background-color: rgb(200, 120, 160);
+
+	-webkit-animation-name: travel;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.traveller:hover
+{
+	-webkit-animation-play-state: paused;
+}
+
+@-webkit-keyframes travel
+{
+	25%
+	{
+		left: 860px;
+		top: 0px;
+	}
+	50%
+	{
+		left: 860px;
+		top: 500px;
+	}
+	75%
+	{
+		left: 0px;
+		top: 500px;
+	}
+	100%
+	{
+		left: 0px;
+		top: 0px;
+	}
+}
+
+#first
+{
+	-webkit-animation-delay: 0s;
+}
+
+#second
+{
+	-webkit-animation-delay: 5s;
+}
+
+#third
+{
+	-webkit-animation-delay: 10s;
+}
+
+#fourth
+{
+	-webkit-animation-delay: 15s;
+}

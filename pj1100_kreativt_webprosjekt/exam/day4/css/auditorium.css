@@ -1,0 +1,90 @@
+#listog
+{
+	left: 225px;
+	top: 223px;
+	width: 73px;
+	height: 52px;
+	background-image: url('../images/listogned.png');
+
+	-webkit-animation-name: crush;
+	-webkit-animation-duration: 0.2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#mac
+{
+	height: 32px;
+	width: 48px;
+	left: 218px;
+	top: 250px;
+	background-image: url('../images/Listogs_mac.png');
+
+	-webkit-animation-name: wobble;
+	-webkit-animation-duration: 0.2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#thought
+{
+	background-color: #ddd;
+	border: 1px solid #000;
+	border-radius: 15px;
+	width: 280px;
+	height: 50px;
+	top: 400px;
+	left: 620px;
+}
+
+#thought p
+{
+	left: 10px;
+	text-align: center;
+}
+
+@-webkit-keyframes crush
+{
+	0%
+	{
+		background-image: url('../images/listogopp.png');
+	}
+
+	49%
+	{
+		background-image: url('../images/listogopp.png');
+	}
+
+	50%
+	{
+		background-image: url('../images/listogned.png');
+	}
+
+	100%
+	{
+		background-image: url('../images/listogned.png');
+	}
+}
+
+@-webkit-keyframes wobble
+{
+	0%
+	{
+		-webkit-transform: rotate(30deg);
+	}
+
+	25%
+	{
+		-webkit-transform: rotate(45deg);
+	}
+
+	50%
+	{
+		-webkit-transform: rotate(-30deg);
+	}
+
+	75%
+	{
+		-webkit-transform: rotate(-45deg);
+	}
+}

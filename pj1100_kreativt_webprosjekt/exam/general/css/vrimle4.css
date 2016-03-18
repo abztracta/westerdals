@@ -1,0 +1,35 @@
+#wrapper
+{
+	background-image: url('../images/vrimle4.png');
+}
+
+.doorOpen
+{
+	width: 158px;
+	height: 600px;
+	left: 670px;
+}
+
+.doorOpen:hover
+{
+	width: 158px;
+	height: 600px;
+	left: 670px;
+	background-image: url('../images/vrimle4_door_open.png');
+}
+
+.exitDoor
+{
+	width: 158px;
+	height: 600px;
+	cursor: url('../../general/images/cursor/northeast.png'), auto;
+}
+
+.vrimle
+{
+	top: 500px;
+	width: 500px;
+	height: 100px;
+	cursor: url('../../general/images/cursor/south.png'), auto;
+}
+

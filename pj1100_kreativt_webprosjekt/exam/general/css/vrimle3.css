@@ -1,0 +1,26 @@
+#wrapper
+{
+	background-image: url('../images/vrimle3.png');
+}
+
+.leave
+{
+	top: 150px;
+	left: 80px;
+	width: 100px;
+	height: 200px;
+	cursor: url('../../general/images/cursor/west.png'), auto;
+}	
+
+.vrimle
+{
+	left: 200px;
+	width: 400px;
+	height: 100px;
+	top: 500px;
+	cursor: url('../../general/images/cursor/south.png'), auto;
+}
+#folk_vrimle3{
+	left: 75px;
+	top: 286px;
+}

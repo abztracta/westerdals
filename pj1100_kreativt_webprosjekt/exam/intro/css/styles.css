@@ -1,0 +1,183 @@
+/* 	Relevant for character_selection.html */
+
+#wrapper
+{
+	background-image: url('../images/bkgrnd.png');
+	overflow: hidden;
+}
+
+.character
+{
+	background-color: rgba(127, 51, 0, 0.9);
+	border: 1px solid #000;
+	border-radius: 10px;
+	width: 200px;
+	height: 400px;
+	top: 100px;
+}
+
+.character h1
+{
+	left: 5px;
+	top: -20px;
+	color: #fff;
+}
+
+.character div
+{
+	top: 100px;
+	width: 120px;
+	height: 180px;
+	left: 40px;
+}
+
+.character div a
+{
+	width: 120px;
+	height: 180px;
+}
+
+.character img
+{
+	top: 100px;
+	width: 120px;
+	height: 180px;
+	left: 40px;
+}
+
+#character_one div
+{
+	background-image: url('../images/kjellwidar.png');
+}
+
+#character_one div:hover
+{
+	background-image: url('../images/kjellwidar_selected.png');
+}
+
+#character_two div
+{
+	background-image: url('../images/kevin.png');
+}
+
+#character_two div:hover
+{
+	background-image: url('../images/kevin_selected.png');
+}
+
+#character_three div
+{
+	background-image: url('../images/amanda.png');
+}
+
+#character_three div:hover
+{
+	background-image: url('../images/amanda_selected.png');
+}
+
+.character p
+{
+	left: 5px;
+	font-size: 11px;
+	color: #fff;
+}
+
+.character p:nth-of-type(1)
+{
+	bottom: 70px;
+}
+
+.character p:nth-of-type(2)
+{
+	bottom: 50px;
+}
+
+.character p:nth-of-type(3)
+{
+	bottom: 30px;
+}
+
+.character p:nth-of-type(4)
+{
+	bottom: 10px;
+}
+
+#character_one
+{
+	left: 100px;
+}
+
+#character_two
+{
+	left: 380px;
+}
+
+#character_three
+{
+	left: 660px;
+}
+
+
+/* 	Relevant for story.html */
+#startGame
+{
+	left: 20px;
+	top: 550px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #57007f;
+	color: #fff;
+	width: 180px;
+	height: 25px;
+	font-size: 20px;
+	border-top: 1px solid #450070;
+	border-left: 3px solid #370065;
+	border-right: 3px solid #370065;
+	border-bottom: 5px solid #250057;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#stories
+{
+	width: 560px;
+	height: 600px;
+	left: 200px;
+}
+
+.story
+{
+	font-size: 20px;
+	text-align: center;
+	display: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 200px;
+	bottom: -220px;
+	color: #242424;
+	-webkit-animation-name: storytelling;
+	-webkit-animation-duration: 60s;
+	-webkit-animation-timing-function: linear;
+}
+
+#kjellStory:target ~ #character_one_story
+{
+	display: block;
+}
+
+#kevinStory:target ~ #character_two_story
+{
+	display: block;
+}
+
+#amandaStory:target ~ #character_three_story
+{
+	display: block;
+}
+
+@-webkit-keyframes storytelling
+{
+	100% {bottom: 820px;}
+}

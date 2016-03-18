@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*
+	I denne oppgaven antar jeg at deklarerte id'er er unike i dokumentet
+*/
+
+/* Lenker med klassen 'sportsElementer' */
+a[class=sportsElementer]
+{
+}
+
+/* Det første bildet i hver section */
+section img:first-child
+{
+}
+
+/* Bilder som ligger i divisjonen med id 'galleri' */
+#galleri img
+{
+}
+
+/* Bilder som har klassen storeBilder som er barneelementer av 
+lenker som igjen ligger i seksjonen med id coolPics */
+#coolPics a img[class=storeBilder]
+{
+}
+
+/* De avsnitt, <p>, som ligger i en section, med id 'omHTML', 
+hvor nevnte section er satt til target av en lenke */
+#omHTML:target p
+{
+}
+
+/* Lenker som har en href som i url-teksten inneholder 'aftenposten' */
+a[href*="aftenposten"]
+{
+}
+
+/* Kun de bildene som ligger på linje 18 i skjermbildet med kode nedenfor */
+div:first-child div:first-child img 
+{
+}

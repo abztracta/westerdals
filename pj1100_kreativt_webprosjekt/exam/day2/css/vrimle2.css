@@ -1,0 +1,36 @@
+#studentVrimle2
+{
+	top: 356px;
+	left: 118px;
+}
+
+#teachingAssistant2
+{
+	top: 140px;
+	left: 250px;
+}
+
+#book
+{
+	top: 170px;
+	left: 350px;
+}
+
+#book:hover ~ #bookbubble p
+{
+	width: 100px;
+	height: 75px;
+	border-radius: 5px; 	
+	left: 447px;
+	top: 230px;
+	width: 280px;
+	display: inline;
+	background-color: #ccc;
+	border: 1px solid #000;
+	text-align: center;
+}
+
+#bookbubble p
+{
+	display: none;
+}

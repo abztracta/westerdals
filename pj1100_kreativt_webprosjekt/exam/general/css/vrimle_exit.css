@@ -1,0 +1,51 @@
+#wrapper
+{
+	background-image: url('../images/hallway_from_vrimle.png');
+}
+
+.openDoor
+{
+	top: 80px;
+	left: 480px;
+	width: 170px;
+	height: 270px;
+}
+
+.openDoor:hover
+{
+	background-image: url('../images/hallway_auditorium_door_open.png');
+}
+
+.auditorium
+{
+	top: 80px;
+	width: 170px;
+	height: 170px;
+	cursor: url('../../general/images/cursor/north.png'), auto;
+}
+
+.fubar
+{
+	top: 150px;
+	height: 300px;
+	width: 100px;
+	cursor: url('../../general/images/cursor/west.png'), auto;
+}
+
+.home
+{
+	left: 860px;
+	top: 200px;
+	width: 100px;
+	height: 300px;
+	cursor: url('../../general/images/cursor/east.png'), auto;
+}
+
+.vrimle
+{
+	left: 200px;
+	top: 500px;
+	width: 500px;
+	height: 100px;
+	cursor: url('../../general/images/cursor/south.png'), auto;
+}

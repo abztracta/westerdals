@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration package="no.woact.pg4100.assignment3.ronesp13" status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{dd.MM.YYYY HH:mm:ss.SSS} [%-5level] %logger{36} - %msg%n" />
+        </Console>
+        <File name="RequestFile" fileName="logs/requests.log">
+            <PatternLayout pattern="%d{dd.MM.YYYY HH:mm:ss.SSS} [%-5level] %logger{36} - %msg%n" />
+        </File>
+        <File name="ExceptionFile" fileName="logs/exceptions.log">
+            <PatternLayout pattern="%d{dd.MM.YYYY HH:mm:ss.SSS} [%-5level] %logger{36} - %msg%n" />
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="all">
+            <AppenderRef ref="Console" level="info" />
+        </Root>
+        <Logger name="no.woact.pg4100.assignment3.ronesp13.controllers.PrimeController" level="info">
+            <AppenderRef ref="RequestFile" level="info" />
+        </Logger>
+        <Logger name="no.woact.pg4100.assignment3.ronesp13.models.PrimeHandler" level="error">
+            <AppenderRef ref="ExceptionFile" level="error" />
+        </Logger>
+    </Loggers>
+</Configuration>

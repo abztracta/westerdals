@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PG4600 Assignment 2 Part 1</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="kims_game">Kims game</string>
+    <string name="round_number">%1$s/%2$s</string>
+    <string name="remember_button">I am ready!</string>
+    <string name="quit">Quit</string>
+    <string name="new_game">New Game</string>
+    <string name="highscores">Highscores</string>
+    <string name="new_highscore">New Highscore!</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="confirm">Confirm</string>
+</resources>

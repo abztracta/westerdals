@@ -1,0 +1,50 @@
+#wrapper
+{
+	width: 960px;
+	height: 600px;
+	position: relative;
+	background-color: rgb(250, 150, 200);
+}
+
+#wrapper *
+{
+	position: absolute;
+}
+
+#traveller
+{
+	width: 100px;
+	height: 100px;
+	background-color: rgb(200, 120, 160);
+	bottom: 0px;
+	left: 0px;
+
+	-webkit-animation-name: travel;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes travel
+{
+	25%
+	{
+		left: 860px;
+		bottom: 0px;
+	}
+	50%
+	{
+		left: 860px;
+		bottom: 500px;
+	}
+	75%
+	{
+		left: 0px;
+		bottom: 500px;
+	}
+	100%
+	{
+		left: 0px;
+		bottom: 0px;
+	}
+}

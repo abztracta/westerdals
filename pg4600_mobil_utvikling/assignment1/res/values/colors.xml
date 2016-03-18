@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="active_player">#f00</color>
+    <color name="waiting_player">#fff</color>
+    <color name="victory">#ff0</color>
+    <color name="draw">#ff8000</color>
+    <color name="gray">#333</color>
+</resources>

@@ -1,0 +1,39 @@
+#wrapper
+{
+	background-image: url('../images/vrimle1.png');
+}
+
+.vrimle2
+{
+	left: 700px;
+	width: 100px;
+	height: 480px;
+	cursor: url('../../general/images/cursor/northeast.png'), auto;
+}
+
+.hallway
+{
+	left: 200px;
+	top: 525px;
+	width: 450px;
+	height: 75px;
+	cursor: url('../../general/images/cursor/south.png'), auto;
+}
+
+#topHat
+{
+	left: 371px;
+	top: 258px;
+}
+
+#studentHat
+{
+	left: 556px;
+	top:  335px;
+}
+
+#studentgreen
+{
+	left: 546px;
+	top: 249px;
+}

@@ -1,0 +1,39 @@
+#wrapper
+{
+	background-image: url('../images/entrance.png');
+}
+
+#vrimle
+{
+	width: 270px;
+	height: 200px;
+	top: 200px;
+	cursor: url('../../general/images/cursor/west.png'), auto;
+}
+
+#fubar
+{
+	width: 150px;
+	height: 180px;
+	left: 390px;
+	top: 150px;
+	cursor: url('../../general/images/cursor/north.png'), auto;
+}
+
+#auditoriet
+{
+	width: 270px;
+	height: 200px;
+	top: 200px;
+	right: 0px;
+	cursor: url('../../general/images/cursor/east.png'), auto;
+}
+
+#home
+{
+	width: 470px;
+	height: 100px;
+	bottom: 0px;
+	left: 220px;
+	cursor: url('../../general/images/cursor/south.png'), auto;
+}

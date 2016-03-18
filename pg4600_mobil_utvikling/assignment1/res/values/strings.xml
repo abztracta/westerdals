@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="player_number_one">Spiller #1</string>
+    <string name="player_number_two">Spiller #2</string>
+    <string name="start_game">Start spill</string>
+    <string name="versus">MOT</string>
+    <string name="winner">%1$s vant!</string>
+    <string name="draw">Uavgjort</string>
+    <string name="highscore">Toppscore</string>
+    <string name="start_new_game">Start nytt spill</string>
+    <string name="back">Tilbake</string>
+    <string name="error">Feil!</string>
+</resources>

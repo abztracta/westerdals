@@ -1,0 +1,84 @@
+#asleep
+{
+	width: 960px;
+	height: 600px;
+	
+	-webkit-animation-name: wakeUp;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+}
+
+#door
+{
+	width: 272px;
+	height: 404px;
+	left: 145px;
+	top: 68px;
+	cursor: url('../images/cursor/north.png'), auto;
+}
+
+
+#door a
+{
+	top: 50px;
+	width: 172px;
+	height: 404px;
+	left: 100px;
+	cursor: url('../../general/images/cursor/north.png'), auto;
+}
+
+#bed a
+{
+	width: 450px;
+	height: 200px;
+	top: 400px;
+	left: 500px;
+	cursor: url('../../general/images/cursor/zzz.png'), auto;
+
+	-webkit-animation-name: moveIn;
+	-webkit-animation-duration: 5.1s;
+	-webkit-animation-timing-function: linear;
+}
+
+#door:hover
+{
+	background-image: url('../images/bedroom_door_open.png');
+	width: 255px;
+	height: 468px;
+}
+
+@-webkit-keyframes moveIn
+{
+	0%
+	{
+		left: 960px;
+	}
+
+	99%
+	{
+		left: 960px;
+	}
+
+	100%
+	{
+		left: 500px;
+	}
+}
+
+@-webkit-keyframes wakeUp
+{
+	0%
+	{
+		background-color: rgba(0, 0, 0, 1);
+	}
+
+	60%
+	{
+		background-color: rgba(0, 0, 0, 0.9);
+	}
+
+	70%
+	{
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+}

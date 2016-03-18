@@ -1,0 +1,35 @@
+#wrapper
+{
+	background-image: url('../images/fubar2.png');
+}
+
+.grabBeer
+{
+	width: 130px;
+	height: 146px;
+	left: 540px;
+	top: 143px;
+}
+
+.leave
+{
+	width: 100px;
+	height: 600px;
+	left: 860px;
+	cursor: url('../../general/images/cursor/east.png'), auto;
+}
+
+#fubarpeople
+{
+	left:  -1px;
+	top: 195px;
+}
+
+#bartender
+{
+	left: 500px;
+	top: 190px;
+	width: 100px;
+	height: 100px;
+	cursor: url('../../general/images/cursor/kaching.png'), auto;
+}

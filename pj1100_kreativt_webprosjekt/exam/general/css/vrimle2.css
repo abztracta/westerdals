@@ -1,0 +1,68 @@
+#wrapper
+{
+	background-image: url('../images/vrimle2.png');
+}
+
+a
+{
+	width: 750px;
+	height: 100px;
+	top: 500px;
+	cursor: url('../../general/images/cursor/southwest.png'), auto;
+}
+
+#book
+{
+	top: 175px;
+	left: 356px;
+}
+
+#teachingAssistant
+{
+	top: 140px;
+	left: 250px;
+}
+
+#studentVrimle2
+{
+	top: 356px;
+	left: 118px;
+}
+
+#book:hover ~ #bookbubble p
+{
+	width: 100px;
+	height: 70px;
+	border-radius: 5px; 	
+	left: 600px;
+	top: 250px;
+	width: 280px;
+	display: inline;
+	background-color: #ccc;
+	border: 1px solid #000;
+	text-align: center;
+}
+
+#bookbubble p
+{
+	display: none;
+}
+
+#teachingAssistant:hover ~ #helper_bubble p
+{
+	width: 100px;
+	height: 30px;
+	border-radius: 5px; 	
+	left: 447px;
+	top: 230px;
+	width: 280px;
+	display: inline;
+	background-color: #ccc;
+	border: 1px solid #000;
+	text-align: center;
+}
+
+#helper_bubble p
+{
+	display: none;
+}

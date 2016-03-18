@@ -1,0 +1,6 @@
+name/subjects/email/position
+STRING/INT/STRING/STRING
+128/3/128/128
+Eivind Brevik/3/breeiv@nith.no/Høgskolelektor
+Bjørn Olav Listog/2/blistog@nith.no/Høgskolelektor
+Per Lauvås/5/lauper@nith.no/Høgskolelektor

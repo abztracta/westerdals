@@ -1,0 +1,38 @@
+#wrapper
+{
+	background-image: url('../images/hallway_from_fubar.png');
+}
+
+.home
+{
+	width: 100px;
+	height: 150px;
+	top: 180px;
+	left: 380px;
+	cursor: url('../../general/images/cursor/north.png'), auto;
+}
+
+.auditorium
+{
+	width: 100px;
+	height: 600px;
+	cursor: url('../../general/images/cursor/west.png'), auto;
+}
+
+.vrimle
+{
+	width: 100px;
+	height: 600px;
+	left: 860px;
+	cursor: url('../../general/images/cursor/east.png'), auto;
+
+}
+
+.fubar
+{
+	width: 500px;
+	height: 100px;
+	left: 200px;
+	top: 500px;
+	cursor: url('../../general/images/cursor/south.png'), auto;
+}

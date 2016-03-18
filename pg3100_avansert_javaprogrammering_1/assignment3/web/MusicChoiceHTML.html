@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Musikkvalg</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <center>
+            <h1>MUSIKKVALG-SIDE</h1>
+            <p>Laget av ronesp13</p>
+        </center>
+        <form action="MusicChoice" method="POST">
+            <h2>Velg musikk-sjanger</h2>
+            <label for="genre">Sjanger</label>
+            <select name="genre" id="genre">
+                <option value="Country">country</option>
+                <option value="Jazz">jazz</option>
+                <option value="Reggae">reggae</option>
+                <option value="Rock">rock</option>
+                <option value="Viser">viser</option>
+            </select>
+            <br/>
+            <center>
+                <input type="submit" value="Send" style="text-align: center;"/>
+            </center>
+        </form>
+    </body>
+</html>

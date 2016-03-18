@@ -1,0 +1,41 @@
+Task1
+
+a)  m = 1
+    n = 2
+    i = 3
+
+    Klassen D har bare en konstruktør som krever en parameter av typen int.
+    Her blir det gjort et kall til super(); som betyr at når objektet D
+    blir opprettet blir det gjort kall til den parameter-løse konstruktøren i klassen C
+    som setter m og n til hhv 1 og 2. Videre i konstruktøren til D gjøres det kall
+    til klassen D's setI(int i)-metode som setter variabelen i til å være lik den
+    parameteren som blir sendt med konstruktøren, i dette tilfellet 3.
+
+b)  String verdi = JOptionPane.showInputDialog(null, "Oppgi verdien: ", JOptionPane.QUESTION_MESSAGE);
+    int tall = Integer.parseInt(verdi);
+
+c) Fordi objektet Klientprogram oppretter er av typen D vil alle metoder klassen D
+   overskriver av arvede foreldre-metoder være de aktuelle metodene.
+
+d1) public D(int i, int m, int n) {
+        super(m, n);
+        setI(i);
+    }
+
+d2) public D(int i, int m, int n) {
+        setM(m);
+        setN(n);
+        setI(i);
+    }
+
+e1) public String toString() {
+        return "i  = " + i + ", " + super.toString();
+    }
+
+e2) public String toString() {
+        return "i = " + getI() + ", m = " + getM() + ", n = " + getN();
+    }
+
+f1) JOptionPane.showMessageDialog(null, d.toString());
+
+f2) JOptionPane.showMessageDialog(null, "i = " + getI() + ", m = " + getM() + ", n = " + getN());

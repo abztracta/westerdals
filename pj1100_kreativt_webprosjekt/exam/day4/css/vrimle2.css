@@ -1,0 +1,29 @@
+#teachingAssistant4
+{
+	top: 140px;
+	left: 250px;
+}
+
+#studentVrimle2
+{
+	top: 356px;
+	left: 118px;
+}
+
+#teachingAssistant4:hover ~ #helper_bubblethree p
+{
+	height: 60px;
+	border-radius: 5px; 	
+	left: 447px;
+	top: 205px;
+	width: 280px;
+	display: inline;
+	background-color: #ccc;
+	border: 1px solid #000;
+	text-align: center;
+}
+
+#helper_bubblethree p
+{
+	display: none;
+}
