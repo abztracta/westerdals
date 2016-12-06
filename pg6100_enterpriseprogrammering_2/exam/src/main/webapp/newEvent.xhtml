@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<ui:composition template="template.xhtml">
+    <ui:define name="title">PG6100 Exam :: Create New Event</ui:define>
+    <ui:define name="content">
+        <h1>New Event</h1>
+        <hr />
+
+        <h:form id="create_event_form">
+            <h:panelGrid columns="2">
+                <h:outputLabel value="Title: " />
+                <h:inputText id="title" value="#{eventsController.event.title}" />
+
+                <h:outputLabel value="Country: " />
+                <h:selectOneMenu id="country" value="#{eventsController.event.country}">
+                    <f:selectItems value="#{sessionsController.countries}" />
+                </h:selectOneMenu>
+
+                <h:outputLabel value="Location: " />
+                <h:inputText id="location" value="#{eventsController.event.location}" />
+
+                <h:outputLabel value="Description: " />
+                <h:inputTextarea id="description" value="#{eventsController.event.description}" />
+
+                <h:commandButton id="submit" type="submit" value="Create" action="#{eventsController.createNewEvent()}" />
+            </h:panelGrid>
+        </h:form>
+        <h:button value="Cancel" outcome="home.xhtml" />
+    </ui:define>
+</ui:composition>
+</html>

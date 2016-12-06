@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<ui:composition template="template.xhtml">
+    <ui:define name="title">PG6100 Exam :: Create New User</ui:define>
+    <ui:define name="content">
+        <h1>Create New User</h1>
+        <hr />
+
+        <h:form id="reg_form">
+            <h:panelGrid columns="2">
+                <h:outputLabel value="Username: " />
+                <h:inputText id="username" value="#{registrationsController.user.username}" />
+
+                <h:outputLabel value="Password: " />
+                <h:inputSecret id="password" value="#{registrationsController.user.password}" />
+
+                <h:outputLabel value="Password Confirmation: " />
+                <h:inputSecret id="password_confirmation" value="#{registrationsController.user.passwordConfirmation}" />
+
+                <h:outputLabel value="First Name: " />
+                <h:inputText id="first_name" value="#{registrationsController.user.firstName}" />
+
+                <h:outputLabel value="Middle Name: " />
+                <h:inputText id="middle_name" value="#{registrationsController.user.middleName}" />
+
+                <h:outputLabel value="Last Name: " />
+                <h:inputText id="last_name" value="#{registrationsController.user.lastName}" />
+
+                <h:outputLabel value="Country: " />
+                <h:selectOneMenu id="country" value="#{registrationsController.user.country}">
+                    <f:selectItems value="#{sessionsController.countries}" />
+                </h:selectOneMenu>
+
+                <h:commandButton id="submit" value="Create" type="submit" action="#{registrationsController.createNewUser(sessionsController)}" />
+            </h:panelGrid>
+        </h:form>
+    </ui:define>
+</ui:composition>
+</html>

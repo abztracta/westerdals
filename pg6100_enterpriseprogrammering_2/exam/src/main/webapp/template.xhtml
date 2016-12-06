@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jstl/core">
+<h:head>
+    <title><ui:insert name="title" /></title>
+</h:head>
+<h:body>
+    <c:if test="#{flash['success'] == null}">
+        <p>#{flash['success']}</p>
+    </c:if>
+
+    <h:panelGroup layout="block">
+        <h1>PG6100 Exam</h1>
+        <hr />
+
+        <c:choose>
+            <c:when test="#{sessionsController.isSignedIn()}">
+                <div id="current_user_div">Logged in as #{sessionsController.currentUser.fullName}</div>
+                <h:form id="sign_out_form">
+                    <h:commandButton id="button" value="Sign out" type="submit" action="#{sessionsController.signOut()}" />
+                </h:form>
+            </c:when>
+            <c:otherwise>
+                <h:outputText value="Not logged in" />
+                <h:button id="main_sign_in_button" value="Sign in" outcome="sign_in.xhtml" />
+            </c:otherwise>
+        </c:choose>
+
+
+    </h:panelGroup>
+
+    <ui:insert name="content" />
+</h:body>
+
+</html>

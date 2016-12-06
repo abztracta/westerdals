@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jstl/core">
+<ui:composition template="template.xhtml">
+    <f:metadata>
+        <f:viewParam name="show" value="#{sessionsController.showEventsFromUsersCountry}" />
+    </f:metadata>
+
+    <ui:define name="title">PG6100 Exam :: Home</ui:define>
+    <ui:define name="content">
+        <c:if test="#{sessionsController.isSignedIn()}">
+            <h:button id="create_event_button" value="Create Event" outcome="newEvent.xhtml" />
+        </c:if>
+        <h1>Event List Home Page</h1>
+        <hr />
+
+        <h2>Future Events</h2>
+
+        <c:if test="#{sessionsController.isSignedIn()}">
+            <h:form id="country_change_form">
+                <h:selectBooleanCheckbox id="checkbox" value="#{sessionsController.showEventsFromUsersCountry}" valueChangeListener="#{sessionsController.showEventsChanged}" onchange="submit();" />
+                <br />
+                <span>Only #{sessionsController.currentUser.country}</span>
+            </h:form>
+        </c:if>
+
+        <c:choose>
+            <c:when test="#{eventsController.getAllEvents(sessionsController.currentUser.country, sessionsController.showEventsFromUsersCountry).size() == 0}">
+                <h:outputText value="No events yet :( Be the first to create one!" />
+            </c:when>
+            <c:otherwise>
+                <h:dataTable id="event_table" value="#{sessionsController.isSignedIn() ? eventsController.getAllEvents(sessionsController.currentUser.country, sessionsController.showEventsFromUsersCountry) : eventsController.getAllEvents(null, sessionsController.showEventsFromUsersCountry)}" var="event">
+                    <h:column>
+                        <f:facet name="header">Title</f:facet>
+                        #{event.title}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Country</f:facet>
+                        #{event.country}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Location</f:facet>
+                        #{event.location}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Participants</f:facet>
+                        #{event.participantCount}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Going</f:facet>
+                        <c:if test="#{sessionsController.isSignedIn()}">
+                            <h:form id="attend_button">
+                                <h:selectBooleanCheckbox id="click" value="#{event.isUserAttending(sessionsController.currentUser)}" valueChangeListener="#{eventsController.attendanceButtonClicked}" onchange="submit()" >
+                                    <f:attribute name="event" value="#{event}" />
+                                    <f:attribute name="user" value="#{sessionsController.currentUser}" />
+                                </h:selectBooleanCheckbox>
+                            </h:form>
+                        </c:if>
+                    </h:column>
+                </h:dataTable>
+            </c:otherwise>
+        </c:choose>
+        <hr />
+    </ui:define>
+</ui:composition>
+</html>

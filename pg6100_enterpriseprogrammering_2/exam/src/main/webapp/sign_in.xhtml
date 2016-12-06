@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<ui:composition template="template.xhtml">
+    <ui:define name="title">PG6100 Exam :: Sign In</ui:define>
+    <ui:define name="content">
+        <h1>Sign in</h1>
+        <hr />
+        <h:form id="sign_in_form">
+            <h:panelGrid columns="2">
+                <h:outputLabel value="Username: " />
+                <h:inputText id="username" value="#{sessionsController.loginUsername}" />
+
+                <h:outputLabel value="Password: " />
+                <h:inputSecret id="password" value="#{sessionsController.loginPassword}" />
+
+            </h:panelGrid>
+            <h:commandButton id="submit" type="submit" value="Sign in" action="#{sessionsController.signIn()}" />
+        </h:form>
+        <h:button id="registration_form_button" value="Create new" outcome="newUser.xhtml" />
+        <h:button value="Cancel" outcome="home.xhtml" />
+    </ui:define>
+</ui:composition>
+</html>
